@@ -1,0 +1,44 @@
+@import "variables";
+#header{
+    background-color: $grey_head;
+    filter: drop-shadow(0.5px 0.866px 2.5px rgba(0,0,0,0.51));
+    .header-main{
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0 10px  0;
+        .logo{
+            a{
+                img{
+                    width: 155px;
+                    height: 35px;
+                }
+            }
+        }
+        .navbar{
+            ul{
+                li{
+                    display: inline-block;
+                    list-style-type: none;
+                    a{
+                        text-decoration: none;
+                        color: $light_black;
+                        font-size: 14px;
+                        padding: 0 15px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        font-family: Arial;
+                        position: relative;
+                        &:hover{
+                            color: $black;
+                        }
+                        img{
+                            position: absolute;
+                            bottom: -15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
